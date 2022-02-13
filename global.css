@@ -1,0 +1,77 @@
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza-escuro: #555555;
+
+    --amarelo-mostarda: #C78C19;
+    --laranja: orange;
+    --laranja-escuro: darkorange;
+    --verde: #088C19;
+    
+    --bg-cabecalho: #BBBBBB;
+    --bg-principal: #FEFEFE;
+    --bg-beneficios: #888888
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+/* css do cabeçalho*/
+.cabecalho {
+    background: var(--bg-cabecalho);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.cabecalho__link {
+    display: inline-block;
+
+    margin-right: .7rem;
+    margin-bottom: 1.25rem;
+    margin-left: .7rem;
+}
+
+.cabecalho__link-texto {
+    text-transform: uppercase;
+    color: var(--preto);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.cabecalho__link-texto:hover {
+    color: var(--efeito-navegacao);
+    text-decoration: underline;
+}
+
+/* css do rodapé*/
+.rodape {
+    text-align: center;
+    background: url(../img/bg.jpg);
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.copyright {
+    color: var(--branco);
+    font-size: 13px;
+}
+
+@media screen and (min-width:1024px) {
+    .cabecalho {
+    flex-direction: row;
+    justify-content: space-around;
+    }
+}
