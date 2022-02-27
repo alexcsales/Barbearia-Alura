@@ -147,27 +147,29 @@
 }
 
 /* css da página contato*/
-form {
-    width: 940px;
-    margin: 40px auto;
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
 }
 
-form label, form legend {
+.formulario__texto {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
 }
 
-.input-padrao {
-    display: block;
+.formulario__input {
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 50%;
+    width: 20%;
 }
 
-form > fieldst {
+.formulario__seletores {
     margin: 0 0 10px;
 }
+
 .checkbox {
     margin: 20px 0;
 }
@@ -183,7 +185,6 @@ form > fieldst {
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
-
 }
 
 .enviar:hover {
@@ -191,17 +192,16 @@ form > fieldst {
     transform: scale(1.2);
 }
 
-table {
-    margin: 40px auto;
+.tabela {
+    margin: 1rem auto;
 }
-
-thead {
+.tabela__cabecalho {
     background: var(--cinza-escuro);
     color: var(--branco);
     font-weight: bold;
 }
 
-th, td {
+.tabela__texto {
     border: 1px solid var(--preto);
     padding: 8px 15px;
 }
