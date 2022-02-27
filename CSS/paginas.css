@@ -213,6 +213,11 @@
         align-items: center;
         flex-wrap: wrap;
     }
+    
+    .formulario, .tabela {
+        align-items: flex-start;
+        margin: 1rem 3rem;
+    }
 }
 
 @media screen and (min-width:1024px){
